@@ -1,6 +1,6 @@
 # Learn Markdown
 
-Hi in this repository, I will teach you the markdown sintax !  
+Hi in this repository, I will teach you the markdown syntax !  
 
 To begin, open the file `learn_markdown.md` on github or on your favourite markdown renderer.
 
