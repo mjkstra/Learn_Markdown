@@ -9,7 +9,7 @@
 - [Blockquotes](#blockquotes)
 - [Lists](#lists)
   - [Unordered lists](#unordered-lists)
-  - [Numbered lists](#numbered-lists)
+  - [Ordered lists](#ordered-lists)
 - [Code](#code)
 - [Horizontal Rule](#horizontal-rule)
 - [Links](#links)
@@ -63,7 +63,7 @@ Are reserved and hence you should escape them with **\\**
 ## Paragraphs and formatting
 
 This is a paragraph.  
-To write a new line you should write **2 spaces** and press **enter** or you can use the **<br>** tag.
+To write a new line you should write **2 spaces** and press **enter** or you can use the **`<br>`** tag.
 
 You can format the text in various ways:
 
@@ -102,30 +102,102 @@ Rendering:
 
 ### Unordered lists
 
-- Writing unordered lists is easy:
-  - You just need to write the **\-** character and a new line at the end
-    - Lines can be indented with a **tab** or **4 spaces**
+To write unordered lists you just need to write the **\-** character and a new line for each line.  
+Lines can be indented with a **tab** or **4 spaces**.  
+Example:  
+```
+- First unordered line
+  - Second unordered line with indentation
+```  
 
-### Numbered lists
+That renders like:  
 
-1. Writing ordered lists is easy: you just need to write a number followed by a \. and a new line at the end  
-2. If you would like to place and indent an unordered list, you need to write **4 spaces** before each line of the list, like so:
+- First unordered line  
+  - Second unordered line with indentation
 
-    - an example
+### Ordered lists
 
-3. If you would like to add code below the entry you can write **8 spaces** for each line of code and **leave an empty line at the beginning** ( there is also a much more elegant way, with sintax highlighting explained in the next chapter ), like so:
+To write ordered lists, you just need to write a number followed by a \. and a new line at the end.  
+Example:  
+```
+1. Ordered line  
+```  
 
+That renders like:  
+
+1. Ordered Line  
+
+***
+
+If you would like to place and indent an unordered list, you need to write **4 spaces** before each line of the list.  
+
+Example:  
+
+```
+2. Ordered line  
+    - Unordered list with indentation  
+```  
+
+That renders like:  
+
+2. Ordered line  
+    - Unordered line with indentation  
+
+***
+
+If you would like to add code below a list entry you can write **8 spaces** for each line of code and **leave an empty line at the beginning** ( there is also a much more elegant way, with sintax highlighting explained in the next chapter ).  
+
+Example:  
+
+```
+3. Ordered line entry with code below  
+        <html>
+          <head>
+            <title>titolo</title>
+          </head>
+        </html>
+```  
+
+That renders like:  
+
+3. Ordered line entry with code below  
         <html>
           <head>
             <title>titolo</title>
           </head>
         </html>
 
-4. If you would like to add comments, you need to write a new line,followed by **4 spaces** and then your comment, like so:
+***
 
+If you would like to add comments, you need to write a new line, followed by **4 spaces** and then your comment.  
+
+Example:  
+
+```
+4. Ordered line with comment below  
     A comment.
-2. You can also add an image, like so:
-  ![Delicious Apple](./images/apple.png)
+```  
+
+That renders like:  
+
+4. Ordered line with comment below  
+    A comment.
+
+***
+
+You can also add an image below line entries by prepending **4 spaces** as prelude( images are explained later ).  
+
+Example:  
+
+```
+5. Ordered line with image below:  
+    ![Delicious Apple](./images/apple.png)
+```  
+
+That renders like:  
+
+5. Ordered line with image below:  
+    ![Delicious Apple](./images/apple.png)
 
 <br>
 
@@ -145,7 +217,8 @@ To write a block of code you need to prepend **4 spaces** to each line, like so:
 
 <br>
 
-Orelse you can write code blocks inside a block delimited by **triple backticks \`\`\`** , with the possibility to exploit sintax highlighting, by stating the language used after the 3 opening backticks, like so:
+Or else you can write code blocks inside a block delimited by **triple backticks \`\`\`** , with the possibility to exploit sintax highlighting, by stating the language used after the 3 opening backticks( I am sorry, but there's no way to show an example here because of MarkDown I can only show you the result. Check the raw format of this file to see how it's done ):  
+
 ```C++
 //Some C++ code
 int var = 2;
@@ -329,7 +402,7 @@ It will be rendered like this:
 
 To enter math mode there are two ways:  
 - Writing in-line formulas by delimiting the text with \$ and \$ and without spaces between the dollar signs and the beginning and ending of the formula.  
-- Writing in-line formulas by delimiting the text with \$\$ and \$\$ and without spaces between the dollar signs and the beginning and ending of the formula.  
+- Writing block formulas by delimiting the text with \$\$ and \$\$ and without spaces between the dollar signs and the beginning and ending of the formula.  
 
 An example of a block formula: `$$\int\limits_a^b{f(x)}$$ `  
 
