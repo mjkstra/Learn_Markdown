@@ -104,7 +104,9 @@ Rendering:
 
 To write unordered lists you just need to write the **\-** character and a new line for each line.  
 Lines can be indented with a **tab** or **4 spaces**.  
+
 Example:  
+
 ```
 - First unordered line
   - Second unordered line with indentation
