@@ -266,9 +266,9 @@ The link text can be formatted:
 
 ### Special links
 
-- Local link: [Links](#links)  
-- Extended link: <https://www.wikipedia.org>  
-- Mail link: <mymail@gmail.com>  
+- Local link: `[Links](#links)` that renders -> [Links](#links)  
+- Extended link: `<https://www.wikipedia.org>` that renders -> <https://www.wikipedia.org>  
+- Mail link: `<mymail@gmail.com>` that renders -> <mymail@gmail.com>  
 
 <br>
 
@@ -276,7 +276,9 @@ The link text can be formatted:
 
 You can write compact links with this sintax: `[Wikipedia][1]`
 
-Then define `[1]`, like so: `[1]: https://www.wikipedia.org "tooltip"`
+Then define `[1]`, like so: `[1]: https://www.wikipedia.org "tooltip"`  
+
+Try it here: [Wikipedia][1]
 
 [1]: https://www.wikipedia.org "commento"
 
